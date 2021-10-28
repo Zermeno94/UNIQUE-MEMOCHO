@@ -3,12 +3,19 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 
+const {clog} = require('./middleware/clog.js');
+// clog will connect to the middleware
+
 const api = require('./routes/index.js');
 
 // express app for listener 3001
 const PORT = process.env.port || 3001;
 
 const app = express();
+
+//calling clog to middleware
+app.use(clog); 
+
 
 // Middleware 
 app.use(express.urlencoded({ extended: true }));
