@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Zermeno94/UNIQUE-MEMOCHO/issues"
   },
-  "homepage": "https://github.com/Zermeno94/UNIQUE-MEMOCHO#readme"
+  "homepage": "https://github.com/Zermeno94/UNIQUE-MEMOCHO#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
