@@ -26,6 +26,8 @@ app.use(express.static('public'));
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/index.html'))
 );
+
+// when you go to localhost address and have the '/' it will redirect  the path to get into the html
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/notes.html'))
 );
