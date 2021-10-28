@@ -6,7 +6,7 @@ const path = require("path");
 const {clog} = require('./middleware/clog.js');
 // clog will connect to the middleware
 
-const api = require('./routes/index.js');
+const api = require('./routes/htmlroutes');
 
 // express app for listener 3001
 const PORT = process.env.port || 3001;
