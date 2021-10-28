@@ -1,13 +1,8 @@
-const fs = require('f');
+const router = require("express")
 
-module.exports = function(app) {
-    
-    app.get("/", function(req, res) {
-        res.sendFile(path.join(__dirname, "/../public/index.html"));
-    });
-    
-    app.get("/api/notes", function(req, res) {
-        res.sendFile(path.join(__dirname, "/../public/notes.html"));
-    });
+const notesRouter = require('/notes');
+const app = express();
 
-}
+app.use('/notes', notesRouter);
+
+module.exports = router;
