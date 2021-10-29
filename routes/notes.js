@@ -1,13 +1,30 @@
 const notes = require("express").Router();
+const { v4: uuidv4 } = require("uuid");
+const {readFromFile,readAndAppend,writeToFile} = require("../helpers/fsUtils");
 
+// GET Route to retrieve all of the users notes 
+notes.get("/", (req,res) => {
+  readFromFile("./db/db.json").then((data) => res.json(jSON.parse(data))); 
+})
 
 // GET Route 
 notes.get("/", (req, res) => {
   readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
-// DELETE Route 
-
+// DELETE Route to allow user to user to delete notes entered 
+notes.delete('/:id', (req,res) => {
+  const noteId = this.req.params.id;
+  readFromFile('./db/db.json')
+  .then((data)=> JSON.parse(data))
+  .then((json)=> {
+    const result = json.filter((note)=> note.id !==noteId);
+    // This will allow the data to the saved in the server/system 
+    writeToFile('./db/db.json',result);
+    // This will show if the user requests to delete their note
+    res.json("Your ${noteId} was deleted!");
+  });
+});
 
 
 
