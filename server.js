@@ -20,6 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
+
 // GET routes to landing page and note taking page 
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
