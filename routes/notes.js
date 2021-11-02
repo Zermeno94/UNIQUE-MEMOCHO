@@ -3,10 +3,11 @@ const notes = require("express").Router();
 const { v4: uuidv4 } = require("uuid");
 const {readFromFile,readAndAppend,writeToFile} = require("../helpers/fsUtils");
 
+
 // GET Route to retrieve all of the users notes 
-notes.get("/", (req,res) => {
-  readFromFile("../db/db.json").then((data) => res.json(JSON.parse(data))); 
-})
+// notes.get("/notes", (req,res) => {
+//   readFromFile("../db/db.json").then((data) => res.json(JSON.parse(data))); 
+// })
 
 // GET Route 
 notes.get("/notes", (req, res) => {
@@ -19,7 +20,8 @@ notes.get("/notes", (req, res) => {
 
 
 // POST route to send data to server to create/update the note taker 
-notes.post('/', (req, res) => {
+
+notes.post('/notes', (req, res) => {
   console.log(req.body);
 
   // title & text is what is given in db.json
@@ -32,7 +34,7 @@ notes.post('/', (req, res) => {
         id: uuidv4( ), // the user will will require tile, text & id to be included in note 
       };
 
-      readAndAppend(newNote, './db/db.json');
+      readAndAppend(newNote, '../db/db.json');
       res.json("YAY!!✌️ You're note was added "); 
       // This will display to the user was successful in submitting their note
   } else {

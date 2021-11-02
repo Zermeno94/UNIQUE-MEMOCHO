@@ -12,10 +12,15 @@
 
 const route = require("express").Router();
 
+// const api = require('./routes/index.js');
+
+// application.use(api);
+
 // app.use(api);
 
 // Imports modular routes 
 const notesRouter = require('./notes');
+const { application } = require("express");
 
 //use routes on routes/notes.js
 route.use('/api', notesRouter);
