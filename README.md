@@ -51,10 +51,15 @@ The UNIQUE MEMOCHO allows the user to  save notes that user wishes to reference 
 * Private Tutor
 * Classmates: Chris Stallcup, Andrew T, Tallah 
 * AskBCS assistant
+* BCS Tutor: Serena Chandler
 
 ## Resources & Tutorials  💻
 
 * [https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md](#https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+* [https://www.youtube.com/watch?v=iM_S4RczozU](#https://www.youtube.com/watch?v=iM_S4RczozU)
+* [https://expressjs.com/en/starter/basic-routing.html](#https://expressjs.com/en/starter/basic-routing.html)
+* [https://google.com](#https://google.com)
+* [https://www.w3schools.com](#https://www.w3schools.com)
 
 
 ## License 📍
