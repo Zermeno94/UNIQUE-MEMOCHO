@@ -1,5 +1,7 @@
 # 11 Express.js: UNIQUE-MEMOCHO 🗒️
 
+![GitHub license](https://img.shields.io/badge/license-MIT-ff69b4.svg)
+
 ## Description
 The UNIQUE MEMOCHO is a fast and simple way to save  create a write a note, save notes and delete. 
 
