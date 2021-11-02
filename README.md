@@ -28,6 +28,8 @@ User will need to the run the following commands:
   npm start
 ```
 
+<img width="1018" alt="Screen Shot 2021-11-02 at 5 44 41 PM" src="https://user-images.githubusercontent.com/87839888/139962092-56e8dae0-67af-4dae-a08b-0a0fcb23665b.png">
+
 User will then click on http://localhost:3001, which will redirect the user to the browser and display the landing webpage.
 
 
