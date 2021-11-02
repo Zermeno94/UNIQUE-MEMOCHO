@@ -1,11 +1,11 @@
 # 11 Express.js: UNIQUE-MEMOCHO 🗒️
 
 ## Description
-
-This application allows the user to create a write a note, save notes and delete. 
+The UNIQUE MEMOCHO is a fast and simple way to save  create a write a note, save notes and delete. 
 
 
 ## Table of Contents 🔎
+- [Installation](#installation)
 - [Usage](#usage)
 - [Demo](#demo)
  -[GitHub & Deploy Link](#githubdeploylink)
@@ -13,9 +13,24 @@ This application allows the user to create a write a note, save notes and delete
 - [Resources & Tutorials](#resources&tutorials)
 - [License](#license)
 
+### Installation  💾
+User will need to the run the following commands: 
+
+```bash
+  npm init -y 
+``` 
+```bash
+  npm install 
+``` 
+```bash
+  npm start
+```
+
+User will then click on http://localhost:3001, which will redirect the user to the browser and display the landing webpage.
+
 
 ### Usage ⚡
-Allows employers to  use  a command-line that takes in information of employees  and generate an HTML webpage that displays summaries for each individual. 
+The UNIQUE MEMOCHO allows the user to  save notes that user wishes to reference back too or remove from their note history. 
 
 ### Demo 🎥
 
@@ -30,11 +45,10 @@ Allows employers to  use  a command-line that takes in information of employees 
 * Miranda Zermeno
 * Private Tutor
 * Classmates: Chris Stallcup, Andrew T, Tallah 
-
+* AskBCS assistant
 
 ## Resources & Tutorials  💻
 
-* [https://www.youtube.com/watch?v=Jv2uxzhPFl4](#https://www.youtube.com/watch?v=Jv2uxzhPFl4)
 * [https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md](#https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
 
