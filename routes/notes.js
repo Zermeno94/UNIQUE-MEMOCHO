@@ -34,7 +34,7 @@ notes.post('/notes', (req, res) => {
         id: uuidv4( ), // the user will will require tile, text & id to be included in note 
       };
 
-      readAndAppend(newNote, '../db/db.json');
+      readAndAppend(newNote, './db/db.json');
       res.json("YAY!!✌️ You're note was added "); 
       // This will display to the user was successful in submitting their note
   } else {
