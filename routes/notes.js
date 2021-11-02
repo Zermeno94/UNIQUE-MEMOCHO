@@ -8,11 +8,11 @@ notes.get("/", (req,res) => {
 })
 
 // GET Route 
-// notes.get("/", (req, res) => {
-//   console.log(res);
-//   readFromFile("/db/db.json").then((data) => console.log(data));
+notes.get("/notes", (req, res) => {
+  console.log(res);
+  readFromFile("/db/db.json").then((data) => console.log(data));
 
-// });
+});
 
 
 // POST route to send data to server to create/update the note taker 
