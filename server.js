@@ -20,6 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
+app.use(api);
 
 // GET routes to landing page and note taking page 
 app.get('/', (req, res) =>
