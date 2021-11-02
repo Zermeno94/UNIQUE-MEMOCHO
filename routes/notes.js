@@ -4,17 +4,19 @@ const {readFromFile,readAndAppend,writeToFile} = require("../helpers/fsUtils");
 
 // GET Route to retrieve all of the users notes 
 notes.get("/", (req,res) => {
-  readFromFile("./db/db.json").then((data) => res.json(jSON.parse(data))); 
+  readFromFile("/db/db.json").then((data) => res.json(jSON.parse(data))); 
 })
 
 // GET Route 
-notes.get("/", (req, res) => {
-  readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
-});
+// notes.get("/", (req, res) => {
+//   console.log(res);
+//   readFromFile("/db/db.json").then((data) => console.log(data));
+
+// });
 
 
 // POST route to send data to server to create/update the note taker 
-notes.post('/', (req, res) => {
+notes.post('/notes', (req, res) => {
   console.log(req.body);
 
   // title & text is what is given in db.json
@@ -24,7 +26,7 @@ notes.post('/', (req, res) => {
       const newNote = {title,text,id: uuidv4( ), // the user will will require tile, text & id to be included in note 
       };
 
-      readAndAppend(newNote, './db/db.json');
+      readAndAppend(newNote, '/db/db.json');
       res.json("YAY!!✌️ You're note was added "); 
       // This will display to the user was successful in submitting their note
   } else {
@@ -36,12 +38,12 @@ notes.post('/', (req, res) => {
 // DELETE Route to allow user to user to delete notes entered 
 notes.delete('/:id', (req,res) => {
   const noteId = this.req.params.id;
-  readFromFile('./db/db.json')
-  .then((data)=> JSON.parse(data))
+  readFromFile('/db/db.json')
+  .then((data)=> console.log(data))
   .then((json)=> {
     const result = json.filter((note)=> note.id !==noteId);
     // This will allow the data to the saved in the server/system 
-    writeToFile('./db/db.json',result);
+    writeToFile('/db/db.json',result);
     // This will show if the user requests to delete their note
     res.json("Your ${noteId} was deleted!");
   });
