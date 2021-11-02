@@ -40,10 +40,11 @@ The UNIQUE MEMOCHO allows the user to  save notes that user wishes to reference 
 
 * [Link to Demo](https://watch.screencastify.com/v/NE0eQF3vBBeeOX0gZOtd)
 
-### GitHub & Deploy Link
+### GitHub & Heroku Link
 
 * [GitHub Link](https://github.com/Zermeno94/UNIQUE-MEMOCHO)
 * [Deploy Link](https://zermeno94.github.io/UNIQUE-MEMOCHO/)
+* [Heroku Link](https://unique-memocho.herokuapp.com/)
 
 ## Contributers
 * Miranda Zermeno
