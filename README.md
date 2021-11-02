@@ -38,7 +38,7 @@ The UNIQUE MEMOCHO allows the user to  save notes that user wishes to reference 
 
 ### Demo 🎥
 
-* [Link to Demo]()
+* [Link to Demo](https://watch.screencastify.com/v/NE0eQF3vBBeeOX0gZOtd)
 
 ### GitHub & Deploy Link
 
