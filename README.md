@@ -42,7 +42,7 @@ The UNIQUE MEMOCHO allows the user to  save notes that user wishes to reference 
 
 ### GitHub & Deploy Link
 
-* [GitHub Link](https://github.com/Zermeno94/TEAM-PRO-GEN)
+* [GitHub Link](https://github.com/Zermeno94/UNIQUE-MEMOCHO)
 * [Deploy Link]()
 
 ## Contributers
